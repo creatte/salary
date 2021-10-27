@@ -7,7 +7,7 @@ type Employee struct {
 	itsName    string
 	itsAddress string
 
-	itsClassification PaymentClassification
+	itsClassification PaymentClassfication
 	itsSchedule       PaymentSchedule
 	itsPaymentMethod  PaymentMethod
 	itsAffiliation    Affiliation
@@ -19,7 +19,7 @@ func (employee Employee) SetEmployee(empid int, name string, address string) {
 	employee.itsAddress = address
 }
 
-func (employee Employee) SetClassification(pc PaymentClassification) {
+func (employee Employee) SetClassification(pc PaymentClassfication) {
 	employee.itsClassification = pc
 }
 
@@ -35,7 +35,7 @@ func (employee Employee) GetName() string {
 	return employee.itsName
 }
 
-func (employee Employee) GetClassification() PaymentClassification {
+func (employee Employee) GetClassification() PaymentClassfication {
 	return employee.itsClassification
 }
 
@@ -78,13 +78,13 @@ func (employee Employee) GetPayPeriodStartDate(payPeriodEndDate time.Time) time.
 	return employee.itsSchedule.GetPayPeriodStartDate(payPeriodEndDate)
 }
 
-func (employee Employee) Payday(Paycheck pc) {
-	grossPay := itsClassification.CalculatePay(pc)
-	deductions := itsAffiliation.CalculateDeductions(pc)
+func (employee Employee) Payday(pc Paycheck) {
+	grossPay := employee.itsClassification.CalculatePay(pc)
+	deductions := employee.itsAffiliation.CalculateDeductions(pc)
 	netPay := grossPay - deductions
-	pc.SetGrossPay(grossPay)
+	pc.SetGrosspay(grossPay)
 	pc.SetDeductions(deductions)
 	pc.SetNetPay(netPay)
-	itsPaymentMethod.Pay(pc)
+	employee.itsPaymentMethod.Pay(pc)
 
 }

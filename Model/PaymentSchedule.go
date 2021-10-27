@@ -2,7 +2,7 @@ package model
 
 import "time"
 
-type PaymentMethod interface {
+type PaymentSchedule interface {
 	IsPaydate(payDate time.Time) bool;
-	GetPayPeriodStartDate(GetPayPeriodEndDate time.Time);
+	GetPayPeriodStartDate(GetPayPeriodEndDate time.Time) time.Time;
 }

@@ -4,7 +4,7 @@ type NoAffiliation struct{
 	Members Affiliation
 }
 
-func (noaffiliation NoAffiliation) CalculateDeductions(pc paycheck) float64{
+func (noaffiliation NoAffiliation) CalculateDeductions(pc Paycheck) float64{
 	return 0
 }
 
