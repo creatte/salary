@@ -6,9 +6,15 @@ import (
 
 
 type PayrollDatabase struct{
-	// private static PayrollDatabase theInstance = new PayrollDatabase();
+	
 	itsEmployees map[int]*model.Employee //因为需返回空，建议使用指针
 	itsUnionMembers map[int]int
+}
+// private static PayrollDatabase theInstance = new PayrollDatabase();
+//全局变量theInstance
+var theInstance = &PayrollDatabase{
+	itsEmployees: make(map[int]*model.Employee),
+	itsUnionMembers: make(map[int]int),
 }
 
 func (payrollDatabase PayrollDatabase) clear(){
@@ -35,13 +41,7 @@ func (payrollDatabase PayrollDatabase) AddEmployee(empid int,e *model.Employee){
 
 func (PayrollDatabase PayrollDatabase) PayrollDatabase(){
 }
-// public static PayrollDatabase Default
-// {
-// 	get
-// 	{
-// 		return theInstance;
-// 	}
-// }
+
 func (payrollDatabase PayrollDatabase) DeleteEmployee(empid int){
 	delete(payrollDatabase.itsEmployees,empid)
 }
@@ -63,14 +63,20 @@ func (payrollDatabase PayrollDatabase) RemoveUnionMember(memberid int){
 	delete(payrollDatabase.itsUnionMembers,memberid)
 }
 
-// public List<int> GetAllEmployeeIds()
-// {
-// 	List<int> empIds = new List<int>(10);
-// 	foreach (int empid in itsEmployees.Keys)
-// 	{
-// 		empIds.Add(empid);
-// 	}
+func (payrollDatabase PayrollDatabase) GetAllEmployeeIds() []int{
+	empIds := make([]int,0)
+	for key,_ := range payrollDatabase.itsEmployees{
+		empIds = append(empIds,key)
+	}
+	return empIds
+}
 
-// 	return empIds;
+
+
+// public static PayrollDatabase Default
+// {
+// 	get
+// 	{
+// 		return theInstance;
+// 	}
 // }
-// theInstance := &PayrollDatabase{}
