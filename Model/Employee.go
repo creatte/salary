@@ -3,20 +3,21 @@ package model
 import "time"
 
 type Employee struct {
-	itsEmpid   int
-	itsName    string
-	itsAddress string
+	itsEmpid   int		//员工编号
+	itsName    string	//员工姓名
+	itsAddress string	//员工地址
 
-	itsClassification PaymentClassfication
-	itsSchedule       PaymentSchedule
-	itsPaymentMethod  PaymentMethod
-	itsAffiliation    Affiliation
+	itsClassification PaymentClassfication //员工类别
+	itsSchedule       PaymentSchedule	//员工上班时间
+	itsPaymentMethod  PaymentMethod		//工资支付方式
+	itsAffiliation    Affiliation		//是否为协会会员
 }
 
-func (employee Employee) SetEmployee(empid int, name string, address string) {
+func (employee Employee) NewEmployee(empid int, name string, address string) {
 	employee.itsEmpid = empid
 	employee.itsName = name
 	employee.itsAddress = address
+	employee.itsAffiliation = NoAffiliation{}
 }
 
 func (employee Employee) SetClassification(pc PaymentClassfication) {
@@ -86,5 +87,4 @@ func (employee Employee) Payday(pc Paycheck) {
 	pc.SetDeductions(deductions)
 	pc.SetNetPay(netPay)
 	employee.itsPaymentMethod.Pay(pc)
-
 }

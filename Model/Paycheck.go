@@ -11,7 +11,7 @@ type Paycheck struct {
 	itsFields 			  map[string]string	
 }
 
-func (paycheck Paycheck) SetTime(payPeriodStart time.Time,payPeriodEnd time.Time){
+func (paycheck Paycheck) NewPaycheck(payPeriodStart time.Time,payPeriodEnd time.Time){
 	paycheck.itsPayPeriodStartDate = payPeriodStart
 	paycheck.itsPayPeriodEndDate = payPeriodEnd
 } 
