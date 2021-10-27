@@ -1,0 +1,13 @@
+h:\ppp\薪水支付案例\AbstractTransactions\obj\Debug\ResolveAssemblyReference.cache
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\AbstractTransactions.dll
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\AbstractTransactions.pdb
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\DataBase.dll
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\Model.dll
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\ModelImplementation.dll
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\TransactionApplication.dll
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\DataBase.pdb
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\ModelImplementation.pdb
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\Model.pdb
+h:\ppp\薪水支付案例\AbstractTransactions\bin\Debug\TransactionApplication.pdb
+h:\ppp\薪水支付案例\AbstractTransactions\obj\Debug\AbstractTransactions.dll
+h:\ppp\薪水支付案例\AbstractTransactions\obj\Debug\AbstractTransactions.pdb

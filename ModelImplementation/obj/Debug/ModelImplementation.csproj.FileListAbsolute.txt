@@ -1,0 +1,7 @@
+h:\ppp\薪水支付案例\ModelImplementation\obj\Debug\ResolveAssemblyReference.cache
+h:\ppp\薪水支付案例\ModelImplementation\bin\Debug\ModelImplementation.dll
+h:\ppp\薪水支付案例\ModelImplementation\bin\Debug\ModelImplementation.pdb
+h:\ppp\薪水支付案例\ModelImplementation\bin\Debug\Model.dll
+h:\ppp\薪水支付案例\ModelImplementation\bin\Debug\Model.pdb
+h:\ppp\薪水支付案例\ModelImplementation\obj\Debug\ModelImplementation.dll
+h:\ppp\薪水支付案例\ModelImplementation\obj\Debug\ModelImplementation.pdb

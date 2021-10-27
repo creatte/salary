@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram2">
+  <logicalClassDesignerModelMoniker Id="8a8ae052-050c-453e-a3fa-18dd752a6885" />
+  <nestedChildShapes>
+    <classShape Id="5c5530d2-c631-42cc-8f81-14973b22278e" absoluteBounds="5.5, 1.125, 1.5, 0.9244384765625" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="40989a94-43f9-4ff8-9ec4-717a150f98d7" LastKnownName="Class4" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0282edf6-cc5f-467c-8593-c3e4f477f792" absoluteBounds="5.515, 1.5150000000000001, 1.4700000000000002, 0.21221923828125" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="5d635b5e-4624-4a44-9f72-dae8aecad354" absoluteBounds="5.515, 1.73721923828125, 1.4700000000000002, 0.21221923828125" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

@@ -1,0 +1,5 @@
+h:\ppp\薪水支付案例\TransactionFactory\bin\Debug\TransactionFactory.dll
+h:\ppp\薪水支付案例\TransactionFactory\bin\Debug\TransactionFactory.pdb
+h:\ppp\薪水支付案例\TransactionFactory\obj\Debug\ResolveAssemblyReference.cache
+h:\ppp\薪水支付案例\TransactionFactory\obj\Debug\TransactionFactory.dll
+h:\ppp\薪水支付案例\TransactionFactory\obj\Debug\TransactionFactory.pdb

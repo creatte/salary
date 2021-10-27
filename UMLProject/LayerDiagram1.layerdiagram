@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7a5dbedb-b66a-48da-a0c9-ee8519e4fc67" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="ce32ea1e-9f4d-47da-856b-a8a8ac7dabca" name="AbstractTransactions">
+      <references>
+        <reference Id="6921dc85-aed2-4893-9dac-47ead6f6945f" name="AbstractTransactions">
+          <ArtifactNode Label="AbstractTransactions" Category="CodeSchema_Project" Id="(Assembly=../AbstractTransactions/AbstractTransactions.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=AbstractTransactions)" Label="AbstractTransactions.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="202ebeb2-f01f-4cb6-9b20-bfd542df60bb" name="DataBase">
+      <references>
+        <reference Id="c508ab2f-4476-46ef-8364-bee2597694cf" name="DataBase">
+          <ArtifactNode Label="DataBase" Category="CodeSchema_Project" Id="(Assembly=../DataBase/DataBase.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataBase)" Label="DataBase.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0c5dc13f-807d-4666-9179-b61b7666b4f5" name="Administrator@ZGC-20110801RLA 2011-10-09 13:04:43" runUser="ZGC-20110801RLA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="默认测试设置" id="afe267c0-51be-4d49-816c-b3f68dc76ec0">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Administrator_ZGC-20110801RLA 2011-10-09 13_04_43" />
+  </TestSettings>
+  <Times creation="2011-10-09T13:04:43.7142791+08:00" queuing="2011-10-09T13:04:44.0262797+08:00" start="2011-10-09T13:04:44.1042798+08:00" finish="2011-10-09T13:04:44.5878807+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="h:\ppp\薪水支付案例\projecttest\bin\debug\projecttest.dll" id="08895d8d-ad8b-ab81-41fb-b8d53512b33e">
+      <Execution id="fc9fd2c8-d7c0-4c5e-a41b-2f561432eb7d" />
+      <TestMethod codeBase="h:/ppp/薪水支付案例/ProjectTest/bin/Debug/ProjectTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectTest.UnitTest1, ProjectTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="08895d8d-ad8b-ab81-41fb-b8d53512b33e" executionId="fc9fd2c8-d7c0-4c5e-a41b-2f561432eb7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fc9fd2c8-d7c0-4c5e-a41b-2f561432eb7d" testId="08895d8d-ad8b-ab81-41fb-b8d53512b33e" testName="TestMethod1" computerName="ZGC-20110801RLA" duration="00:00:00.0110266" startTime="2011-10-09T13:04:44.1198798+08:00" endTime="2011-10-09T13:04:44.4786805+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc9fd2c8-d7c0-4c5e-a41b-2f561432eb7d">
+    </UnitTestResult>
+  </Results>
+</TestRun>
