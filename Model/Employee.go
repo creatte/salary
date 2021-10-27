@@ -17,7 +17,7 @@ func (employee Employee) NewEmployee(empid int, name string, address string) {
 	employee.itsEmpid = empid
 	employee.itsName = name
 	employee.itsAddress = address
-	employee.itsAffiliation = NoAffiliation{}
+	employee.itsAffiliation = &NoAffiliation{} //默认为非会员
 }
 
 func (employee Employee) SetClassification(pc PaymentClassfication) {
