@@ -13,11 +13,12 @@ type Employee struct {
 	itsAffiliation    Affiliation		//是否为协会会员
 }
 
-func (employee Employee) NewEmployee(empid int, name string, address string) {
+func (employee Employee) NewEmployee(empid int, name string, address string) Employee{
 	employee.itsEmpid = empid
 	employee.itsName = name
 	employee.itsAddress = address
 	employee.itsAffiliation = &NoAffiliation{} //默认为非会员
+	return employee
 }
 
 func (employee Employee) SetClassification(pc PaymentClassfication) {
