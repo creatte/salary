@@ -10,7 +10,7 @@ type DirectMethod struct {
 	model.PaymentMethod
 }
 
-func (di DirectMethod) newDirctMethod(bank string, account string) DirectMethod{
+func (di DirectMethod) NewDirctMethod(bank string, account string) DirectMethod{
 	di.itsBank = bank
 	di.itsAccount = account
 	return di

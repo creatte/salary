@@ -7,7 +7,7 @@ type MailMethod struct {
 	model.PaymentMethod
 }
 
-func (ma MailMethod) newMailMethod(address string) MailMethod{
+func (ma MailMethod) NewMailMethod(address string) MailMethod{
 	ma.itsAddress = address
 	return ma
 }

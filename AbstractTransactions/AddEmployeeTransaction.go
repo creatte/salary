@@ -5,7 +5,7 @@ import (
 	"Salary/ModelImplementation"
 	"Salary/Database"
 )
-
+//在go语言中将函数首字母小写代表私有，大写代表外部可以引用
 type AddEmployeeTransaction struct{
 	AddEmployeeTransactioner //内嵌，类似于java继承
 	itsEmpid int	//员工编号
@@ -18,11 +18,11 @@ type AddEmployeeTransactioner interface{
 	GetSchedule() model.PaymentSchedule
 }
 
-func (add AddEmployeeTransaction) newAddEmployeeTransaction(empid int,name string,address string) AddEmployeeTransaction{
+func (add AddEmployeeTransaction) NewAddEmployeeTransaction(empid int,name string,address string){
 	add.itsEmpid = empid
 	add.itsName = name
 	add.itsAddress = address
-	return add
+//	return add
 }
 
 func (add AddEmployeeTransaction) Execute(){

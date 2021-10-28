@@ -7,7 +7,7 @@ type ServiceCharge struct {
 	itsAmount 	float64
 }
 
-func (se ServiceCharge) newServiceCharge(date time.Time,amount float64) ServiceCharge{
+func (se ServiceCharge) NewServiceCharge(date time.Time,amount float64) ServiceCharge{
 	se.itsDate = date
 	se.itsAmount =amount
 	return se

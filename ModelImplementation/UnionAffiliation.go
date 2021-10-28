@@ -12,7 +12,7 @@ type UnionAffiliation struct {
 	model.Affiliation
 }
 
-func (un UnionAffiliation) newUnionAffiliation(memberId int,dues float64) UnionAffiliation{
+func (un UnionAffiliation) NewUnionAffiliation(memberId int,dues float64) UnionAffiliation{
 	un.itsMemberId = memberId
 	un.itsDues = dues
 	return un

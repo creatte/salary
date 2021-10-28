@@ -17,6 +17,11 @@ type ChangeAffiliationTransactioner interface {
 	GetAffiliation() model.Affiliation
 }
 
+func (ch ChangeAffiliationTransaction) newChangeAffiliationTransaction(empid int) ChangeAffiliationTransaction{
+	ch.itsEmpid = empid
+	return ch
+}
+
 func (ch ChangeAffiliationTransaction) Change(e model.Employee){
 	ch.RecordMembership(e)
 	af := ch.GetAffiliation()

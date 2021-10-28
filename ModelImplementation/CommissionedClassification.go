@@ -12,7 +12,7 @@ type CommissionedClassification struct {
 	model.PaymentClassfication
 }
 
-func (co CommissionedClassification) newCommissionedClassification(salary float64,commissionRate float64) CommissionedClassification{
+func (co CommissionedClassification) NewCommissionedClassification(salary float64,commissionRate float64) CommissionedClassification{
 	co.itsSalary = salary
 	co.itsCommissionRate = commissionRate
 	return co

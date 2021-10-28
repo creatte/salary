@@ -13,7 +13,7 @@ type HourlyClassification struct {
 	model.PaymentClassfication
 }
 
-func (ho HourlyClassification) newHourlyClassification(hourlyRate float64) HourlyClassification{
+func (ho HourlyClassification) NewHourlyClassification(hourlyRate float64) HourlyClassification{
 	ho.itsRate = hourlyRate
 	return ho
 }

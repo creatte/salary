@@ -7,7 +7,7 @@ type SalesReceipt struct {
 	itsAmount       float64
 }
 
-func (sa SalesReceipt) newSalesReceipt(saleDate time.Time,amount float64) SalesReceipt{
+func (sa SalesReceipt) NewSalesReceipt(saleDate time.Time,amount float64) SalesReceipt{
 	sa.itsSaleDate = saleDate
 	sa.itsAmount = amount
 	return sa

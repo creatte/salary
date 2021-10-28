@@ -12,6 +12,11 @@ type ChangeClassificationTransactioner interface {
 	GetSchedule() model.PaymentSchedule
 }
 
+func (ch ChangeClassificationTransaction) newChangeClassificationTransaction(empid int) ChangeClassificationTransaction{
+	ch.itsEmpid = empid
+	return ch
+}
+
 func (ch ChangeClassificationTransaction) ChangeClassificationTransaction(empid int) ChangeClassificationTransaction{
 	ch.itsEmpid = empid
 	return ch

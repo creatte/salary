@@ -17,7 +17,7 @@ type ChangeEmployeeTransactioner interface {
 	Change(e model.Employee)
 }
 
-func (ch ChangeEmployeeTransaction) newChangeEmployeeTransaction(empid int) ChangeEmployeeTransaction{
+func (ch ChangeEmployeeTransaction) NewChangeEmployeeTransaction(empid int) ChangeEmployeeTransaction{
 	ch.itsEmpid = empid
 	return ch
 }

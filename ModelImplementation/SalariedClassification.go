@@ -7,8 +7,9 @@ type SalariedClassification struct {
 	model.PaymentClassfication
 }
 
-func (sa SalariedClassification) SalariedClassification(salary float64) {
+func (sa SalariedClassification) NewSalariedClassification(salary float64) SalariedClassification{
 	sa.itsSalary = salary
+	return sa
 }
 
 func (sa SalariedClassification) GetSalary() float64 {
