@@ -2,8 +2,10 @@ package transactionimplementation
 
 import (
 	abstracttransactions "Salary/AbstractTransactions"
+	database "Salary/Database"
 	model "Salary/Model"
 	modelimplementation "Salary/ModelImplementation"
+	"reflect"
 )
 
 type ChangeUnaffiliatedTransaction struct{
@@ -16,12 +18,11 @@ func (ch ChangeUnaffiliatedTransaction) NewChangeUnaffiliatedTransaction(empid i
 
 func (ch ChangeUnaffiliatedTransaction) RecordMembership(e model.Employee){
 	af := e.GetAffiliation()
-	// if (af is ModelImplementation.UnionAffiliation)
-    //         {
-    //             ModelImplementation.UnionAffiliation uaf = (ModelImplementation.UnionAffiliation)af;
-    //             int memberId = uaf.GetMemberId();
-    //             DataBase.PayrollDatabase.Default.RemoveUnionMember(memberId);
-    //         }
+	 if reflect.TypeOf(af) == reflect.TypeOf(modelimplementation.UnionAffiliation{}){
+     	uaf := af.(modelimplementation.UnionAffiliation)
+    	memberId := uaf.GetMemberId()
+    	database.PayrollDatabase{}.RemoveUnionMember(memberId)
+}
 }
 
 func (ch ChangeUnaffiliatedTransaction) GetAffiliation() model.Affiliation{

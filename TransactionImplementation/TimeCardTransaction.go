@@ -3,7 +3,9 @@ package transactionimplementation
 import (
 	database "Salary/Database"
 	"Salary/transactionapplication"
+	"reflect"
 	"time"
+	modelimplementation "Salary/ModelImplementation"
 )
 
 
@@ -24,6 +26,9 @@ func (ti TimeCardTransaction) Execute(){
 	e := database.PayrollDatabase{}.GetEmployee(ti.itsEmpid)
 	if e != nil{
 		pc := e.GetClassification()
-		if pc
+		if reflect.TypeOf(pc) == reflect.TypeOf(modelimplementation.HourlyClassification{}){
+			hc := pc.(*modelimplementation.HourlyClassification)
+			hc.AddTimeCard(modelimplementation.TimeCard{}.NewTimeCard(ti.itsDate,ti.itsHours))
+		}
 	}
 }
