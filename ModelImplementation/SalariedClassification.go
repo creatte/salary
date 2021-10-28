@@ -4,6 +4,7 @@ import model "Salary/Model"
 
 type SalariedClassification struct {
 	itsSalary float64
+	model.PaymentClassfication
 }
 
 func (sa SalariedClassification) SalariedClassification(salary float64) {

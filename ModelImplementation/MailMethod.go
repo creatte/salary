@@ -4,6 +4,7 @@ import model "Salary/Model"
 
 type MailMethod struct {
 	itsAddress string
+	model.PaymentMethod
 }
 
 func (ma MailMethod) newMailMethod(address string) MailMethod{

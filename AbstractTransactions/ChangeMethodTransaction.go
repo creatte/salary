@@ -9,6 +9,7 @@ import (
 type ChangeMethodTransaction struct {
 	ChangeMethodTransactioner
 	ChangeEmployeeTransaction
+	model.PaymentMethod
 }
 
 type ChangeMethodTransactioner interface {

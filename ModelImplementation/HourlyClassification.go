@@ -10,6 +10,7 @@ import (
 type HourlyClassification struct {
 	itsRate      float64
 	itsTimeCards map[time.Time]TimeCard
+	model.PaymentClassfication
 }
 
 func (ho HourlyClassification) newHourlyClassification(hourlyRate float64) HourlyClassification{

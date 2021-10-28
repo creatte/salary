@@ -1,8 +1,12 @@
 package modelimplementation
 
-import "time"
+import (
+	model "Salary/Model"
+	"time")
+
 
 type MonthlySchedule struct {
+	model.PaymentSchedule
 }
 
 func (mo MonthlySchedule) IsLastDayOfMonth(date time.Time) bool {

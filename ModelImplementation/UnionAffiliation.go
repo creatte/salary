@@ -9,6 +9,7 @@ type UnionAffiliation struct {
 	itsMemberId       int
 	itsDues           float64
 	itsServiceCharges map[time.Time]ServiceCharge
+	model.Affiliation
 }
 
 func (un UnionAffiliation) newUnionAffiliation(memberId int,dues float64) UnionAffiliation{

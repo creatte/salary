@@ -7,6 +7,7 @@ import model "Salary/Model"
 type DirectMethod struct {
 	itsBank    string
 	itsAccount string
+	model.PaymentMethod
 }
 
 func (di DirectMethod) newDirctMethod(bank string, account string) DirectMethod{

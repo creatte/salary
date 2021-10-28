@@ -8,6 +8,7 @@ import (
 
 type ChangeAffiliationTransaction struct {
 	ChangeEmployeeTransaction
+	model.Affiliation
 	ChangeAffiliationTransactioner
 }
 

@@ -2,11 +2,14 @@ package abstracttransactions
 
 import (
 	database "Salary/Database"
-	model "Salary/Model")
+	model "Salary/Model"
+	transactionapplication "Salary/TransactionApplication"
+)
 
 
 type ChangeEmployeeTransaction struct {
 	ChangeEmployeeTransactioner
+	transactionapplication.Transaction
 	itsEmpid int
 }
 

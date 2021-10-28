@@ -1,5 +1,5 @@
 package transactionapplication
 
-type transaction interface{
+type Transaction interface{
 	Execute();
 }

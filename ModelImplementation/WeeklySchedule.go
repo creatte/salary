@@ -1,8 +1,12 @@
 package modelimplementation
 
-import "time"
+import (
+	model "Salary/Model"
+	"time")
+
 
 type WeeklySchedule struct {
+	model.PaymentSchedule
 }
 
 func (we WeeklySchedule) IsPaydate(paydate time.Time) bool{
