@@ -11,9 +11,10 @@ type CommissionedClassification struct {
 	itsReceipts       map[time.Time]SalesReceipt
 }
 
-func (co CommissionedClassification) newCommissionedClassification(salary float64,commissionRate float64){
+func (co CommissionedClassification) newCommissionedClassification(salary float64,commissionRate float64) CommissionedClassification{
 	co.itsSalary = salary
 	co.itsCommissionRate = commissionRate
+	return co
 }
 
 func (co CommissionedClassification) GetSalary() float64{

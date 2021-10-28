@@ -7,9 +7,10 @@ type TimeCard struct {
 	itsHours float64
 }
 
-func (ti TimeCard) newTimeCard(date time.Time, hours float64){
+func (ti TimeCard) newTimeCard(date time.Time, hours float64) TimeCard{
 	ti.itsDate = date
 	ti.itsHours = hours
+	return ti
 }
 
 func (ti TimeCard) GetDate() time.Time{

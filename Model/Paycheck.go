@@ -11,9 +11,10 @@ type Paycheck struct {
 	itsFields 			  map[string]string	
 }
 
-func (paycheck Paycheck) NewPaycheck(payPeriodStart time.Time,payPeriodEnd time.Time){
+func (paycheck Paycheck) NewPaycheck(payPeriodStart time.Time,payPeriodEnd time.Time) Paycheck{
 	paycheck.itsPayPeriodStartDate = payPeriodStart
 	paycheck.itsPayPeriodEndDate = payPeriodEnd
+	return paycheck
 } 
 
 func (paycheck Paycheck) SetGrosspay(GrossPay float64){

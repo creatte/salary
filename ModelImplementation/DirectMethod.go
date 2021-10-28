@@ -9,9 +9,10 @@ type DirectMethod struct {
 	itsAccount string
 }
 
-func (di DirectMethod) newDirctMethod(bank string, account string) {
+func (di DirectMethod) newDirctMethod(bank string, account string) DirectMethod{
 	di.itsBank = bank
 	di.itsAccount = account
+	return di
 }
 
 func (di DirectMethod) GetBank() string {

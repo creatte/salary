@@ -11,9 +11,10 @@ type UnionAffiliation struct {
 	itsServiceCharges map[time.Time]ServiceCharge
 }
 
-func (un UnionAffiliation) newUnionAffiliation(memberId int,dues float64){
+func (un UnionAffiliation) newUnionAffiliation(memberId int,dues float64) UnionAffiliation{
 	un.itsMemberId = memberId
 	un.itsDues = dues
+	return un
 }
 
 func (un UnionAffiliation) GetServiceCharge(date time.Time) ServiceCharge{

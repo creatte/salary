@@ -12,8 +12,9 @@ type HourlyClassification struct {
 	itsTimeCards map[time.Time]TimeCard
 }
 
-func (ho HourlyClassification) newHourlyClassification(hourlyRate float64){
+func (ho HourlyClassification) newHourlyClassification(hourlyRate float64) HourlyClassification{
 	ho.itsRate = hourlyRate
+	return ho
 }
 
 func (ho HourlyClassification) GetRate() float64{ 

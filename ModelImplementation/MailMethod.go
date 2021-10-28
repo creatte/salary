@@ -6,8 +6,9 @@ type MailMethod struct {
 	itsAddress string
 }
 
-func (ma MailMethod) newMailMethod(address string) {
+func (ma MailMethod) newMailMethod(address string) MailMethod{
 	ma.itsAddress = address
+	return ma
 }
 
 func (ma MailMethod) GetAddress() string {
